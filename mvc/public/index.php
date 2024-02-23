@@ -1,1 +1,6 @@
-Sr. Ivor Cruz
+<?php
+
+require '../app/core/init.php';
+$app = new App();
+
+?>
