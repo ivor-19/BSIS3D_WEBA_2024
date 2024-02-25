@@ -6,6 +6,7 @@ class Home
     {
         echo 'Home/index';
         echo 'HOME INDEX';
+        echo 'this is the real deal';
     }
     public function wow()
     {
