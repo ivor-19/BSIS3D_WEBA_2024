@@ -70,7 +70,7 @@ class Model extends Database
 
         $query = trim($query, ",");
 
-        $query .= " where $column = :$columm";
+        $query .= " where $column = :$column ";
 
         $data[$column] = $id;
         $this->query($query, $data);
