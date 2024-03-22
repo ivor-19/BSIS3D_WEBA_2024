@@ -52,6 +52,30 @@ class Model extends Database {
 
     }
 
+    public function update($id, $data, $column = "id"){
+        $keys = array_keys($data);
+        $query = "update $this->table_set ";
+
+        foreach($keys as $key){
+            $query .= $key ." = :". $key . ", ";
+        }
+        $query = trim($query,", ");
+
+        $query .= " where $column = :$column";
+        $data[$column] = $id;
+        $this-> query($query, $data);
+
+        return false;   
+    }
+    public function delete($id, $column = "id"){
+        $data[$column] = $id;
+        $query = "delete from $this->table where $column = :$column";
+
+        $this->query($query, $data);
+
+        return false;
+    }
+
 }
 
 ?>
