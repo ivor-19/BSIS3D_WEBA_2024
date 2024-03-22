@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 <?php 
 
-=======
-<?php
-
 require 'functions.php';
->>>>>>> origin/warren-branch
+require 'Database.php';
+require 'Controller.php';
+require 'Model.php'; 
 require 'App.php';
