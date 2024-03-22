@@ -4,4 +4,9 @@ require 'functions.php';
 require 'Database.php';
 require 'Controller.php';
 require 'Model.php'; 
-require 'App.php';
+require 'App.php'; 
+
+sql_autoload_register(function(class_name){
+
+    require '../app/models/' .$class_name. ',php';
+});
