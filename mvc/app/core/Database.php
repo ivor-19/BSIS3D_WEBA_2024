@@ -15,7 +15,7 @@ class Database{
         $check = $stm->execute($data);
 
         if($check){
-            $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+            $result = $stm->fetchAll(PDO::FETCH_OBJ);
             return $result;
         }
         return false;   
