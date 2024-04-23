@@ -30,8 +30,9 @@
     !-->
     <input type="hidden" name="id" value="<?= $task->id ?>">
     <button type="submit" class="btn btn-danger">Delete</button>
+    <button type="button" class="btn btn-light" onclick="window.location.href='<?= ROOT ?>/tasks'">Cancel</button>
   </form>
-
+  
 </div>
 
 <?php include PATH . "partials/footer.php" ?>

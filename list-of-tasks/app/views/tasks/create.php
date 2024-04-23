@@ -32,6 +32,7 @@
         </div>
         !-->
         <button type="submit" class="btn btn-primary">Create</button>
+        <button type="button" class="btn btn-light" onclick="window.location.href='<?= ROOT ?>/tasks'">Cancel</button>
     </form>
 
 </div>
