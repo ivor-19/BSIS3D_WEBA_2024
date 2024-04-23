@@ -1,32 +1,5 @@
-.custom-select {
-    display: inline-block;
-    width: 200px;
-    height: 40px; 
-    padding: 8px 12px;
-    border: 1px solid #ccc; 
-    border-radius: 4px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-    position: relative;
-    cursor: pointer; 
-    font-size: 16px;
-    color: #333; 
-    -webkit-appearance: none; 
-
-}
-.custom-select {
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2212%22%20height%3D%227%22%20viewBox%3D%220%200%2012%207%22%20fill%3D%22none%22%20xmlns%3D%22http://www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M1%201L6%206L11%201%22%20stroke%3D%22%23333%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E');
-    background-repeat: no-repeat;
-    background-position: right 10px center; 
-    background-size: 12px 7px;
-}
-
-tbody tr:hover{
-    
-}
 table{
-    border-collapse: collapse;
-        
+    border-collapse: collapse;   
     font-size: 0.9em;
     width: 900px;
     margin-bottom: 100px;
@@ -39,4 +12,11 @@ thead{
 }
 table tbody tr:nth-of-type(even){
     background-color: #E7E3E2;
+}
+.contenttable{
+    max-height: 630px;
+    overflow-y: auto;
+    border-bottom: 4px solid #272e44;
+    background-color: white;
+    box-shadow: 0px 10px 20px #d9d9d9;
 }
