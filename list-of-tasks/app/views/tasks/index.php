@@ -7,14 +7,16 @@
     <a href="<?= ROOT ?>/tasks/create" class="btn btn-primary">Add New</a>
   </div>
 
-  <table class="table table head">
-    <tr>
-      <th>Task Name</th>
-      <th>Task Description</th>
-      <th>Task Status</th>
-      <th>Due</th>
-      <th></th>
-    </tr>
+  <table class= "table table-hover">
+    <thead class = table-dark>
+      <tr>
+          <th>Task Name</th>
+          <th>Task Description</th>
+          <th>Task Status</th>
+          <th>Due</th>
+          <th></th>
+      </tr>
+    </thead>   
     <?php if ($tasks != null) { ?>
       <?php foreach ($tasks as $item) { ?>
         <tbody>

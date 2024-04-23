@@ -18,13 +18,12 @@ class Tasks extends Controller
     $x = new Task();
 
     if (count($_POST) > 0) {
-
-      
-      //$_POST['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
-
-      $x->insert($_POST);
-
-      redirect('tasks');
+        if (!empty($_POST['task_name']) && !empty($_POST['task_description'])) {
+            $x->insert($_POST);
+            redirect('tasks');
+        } else {
+            echo "Please fill in all required fields.";
+        }
     }
 
     $this->view('tasks/create');

@@ -23,6 +23,11 @@
         <div class="mb-2">
             <label for="task_date">Due</label>
             <input id="task_due" name="task_due" type="date" class="form-control">
+            <script>
+                var today = new Date();
+                var formattedDate = today.getFullYear() + '-' + (today.getMonth() + 1).toString().padStart(2, '0') + '-' + today.getDate().toString().padStart(2, '0');
+                document.getElementById('task_due').value = formattedDate;
+            </script>
         </div>
 
         <!--
@@ -37,7 +42,7 @@
 
 </div>
 <style>
-.custom-select {
+    .custom-select {
     display: inline-block;
     width: 200px;
     height: 40px; 
@@ -50,17 +55,15 @@
     cursor: pointer; 
     font-size: 16px;
     color: #333; 
-    -webkit-appearance: none; /* Removes default styling */
+    -webkit-appearance: none; 
 
-}
-
-/* Style for the arrow icon using a background image */
-.custom-select {
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2212%22%20height%3D%227%22%20viewBox%3D%220%200%2012%207%22%20fill%3D%22none%22%20xmlns%3D%22http://www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M1%201L6%206L11%201%22%20stroke%3D%22%23333%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E');
-    background-repeat: no-repeat;
-    background-position: right 10px center; 
-    background-size: 12px 7px;
-}
+    }
+    .custom-select {
+        background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2212%22%20height%3D%227%22%20viewBox%3D%220%200%2012%207%22%20fill%3D%22none%22%20xmlns%3D%22http://www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M1%201L6%206L11%201%22%20stroke%3D%22%23333%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E');
+        background-repeat: no-repeat;
+        background-position: right 10px center; 
+        background-size: 12px 7px;
+    }
 
 
 </style>
