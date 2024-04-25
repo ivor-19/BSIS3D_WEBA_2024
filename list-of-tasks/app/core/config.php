@@ -1,7 +1,7 @@
 <?php
 
 define('ROOT', 'http://localhost/bsis3d_weba_2024/list-of-tasks/public');
-define('PATH', 'C:/xampp/htdocs/BSIS3D_WEBA_2024/list-of-tasks/app/views/');
+define('PATH', 'D:/xampp/htdocs/BSIS3D_WEBA_2024/list-of-tasks/app/views/');
 
 
 define('DB_HOST', 'localhost');
