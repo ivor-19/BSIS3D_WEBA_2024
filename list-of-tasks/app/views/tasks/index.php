@@ -4,6 +4,7 @@
 
   <div class="mt-5 d-flex justify-content-between align-items-center">
     <h2>List of Tasks</h2>
+    
     <a href="<?= ROOT ?>/tasks/create" class="btn btn-primary">Add New</a>
   </div>
   <div class = "contenttable">
