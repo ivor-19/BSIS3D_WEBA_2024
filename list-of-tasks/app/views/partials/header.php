@@ -28,25 +28,27 @@
                   <a class="nav-link active" aria-current="page" href="<?= ROOT ?>/tasks">Tasks</a>
                 </li>
               <?php endif; ?>
-
+             
         </ul>
+            <div class = "d-flex align-items-center gap-3">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div>
+                <?php if (empty($_SESSION['USER'])): ?>
 
-            <?php if (empty($_SESSION['USER'])): ?>
+                    <a href="<?= ROOT ?>/login" class="btn btn-secondary">Login</a>
+                    <?php else: ?>
 
-            <a href="<?= ROOT ?>/login" class="btn btn-secondary">Login</a>
+                    <span class="me-1"><?= $_SESSION['USER']->name ?></span>
+                    <a href="<?= ROOT ?>/logout" class="btn btn-secondary">Logout</a>
 
-            <?php else: ?>
-
-            <span class="me-3"><?= $_SESSION['USER']->name ?></span>
-
-            <a href="<?= ROOT ?>/logout" class="btn btn-secondary">Logout</a>
-
-            <?php endif; ?>
-
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+                  <?php endif; ?>
+                </div>
+               
+            </div>
+           
       </div>
     </div>
   </nav>
