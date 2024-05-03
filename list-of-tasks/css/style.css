@@ -21,3 +21,6 @@ table tbody tr:nth-of-type(even){
     border-radius: 15px;
     padding: 10px;
 }
+.h1{
+    color: red;
+}

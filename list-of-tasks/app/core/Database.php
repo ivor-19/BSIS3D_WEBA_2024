@@ -4,7 +4,7 @@ class Database
 {
   public function connect()
   {
-    // tasks - id, task_name, task_desciption, task_status, task_due
+    
     $string = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME;
     $con = new PDO($string, DB_USER, DB_PASS);
     return $con;

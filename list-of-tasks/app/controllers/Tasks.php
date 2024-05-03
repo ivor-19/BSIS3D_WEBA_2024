@@ -4,6 +4,10 @@ class Tasks extends Controller
 {
   public function index()
   {
+    if (!Auth::logged_in()) {
+      redirect('login');
+    }
+    
     $x = new Task();
     $rows = $x->findAll();
 
